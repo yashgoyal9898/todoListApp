@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-body {
+  background: #2c2c2c !important;
+}
+
+.todo-heading h1 {
+    color: var(--light, #fff);
+    font-family: Racing Sans One;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin: 50px 0px;
+}
+.heading-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.underline {
+    width: 300px;
+    height: 2px;
+    background: #FFF;
+}
+
+.todo-list-content {
+    max-width: 780px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px;
+    border: 1px solid #fff;
+}
+.todo-taskadd {
+    display: flex;
+    margin-bottom: 70px;
+}
+#add-task {
+    height: 49.438px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #D9D9D9;
+    width: 100%;
+    padding: 0px 25px;
+}
+button {
+    width: 140px;
+    border-radius: 20px;
+    background: #4F4F4F;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: -140px;
+    border: none;
+}
+
+.list-of-tasks {
+    padding: 0px;
+    margin: 0px;
+}
+.list-of-tasks li {
+    border-radius: 10px;
+    background: #222;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px 15px 5px 49px;
+    list-style: none;
+    margin: 25px 0px;
+    position: relative;
+    line-height: 36px;
+    padding-bottom: 13px;
+}
+.list-of-tasks li::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/circle-unchecked.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    color: #fff;
+    top: 17px;
+    background-size: 22px;
+}
+.list-of-tasks li.task-completed {
+    text-decoration: line-through;
+    color: #fff;
+}
+.list-of-tasks li.task-completed::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/circle-checked.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    color: #fff;
+    top: 17px;
+    background-size: 22px;
+}
+span {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    font-size: 25px;
+}
+
+.list-of-tasks li span::after {
+    position: absolute;
+    content: '';
+    background: url(../img/list-delete-icon.svg);
+    width: 53px;
+    height: 55px;
+    background-repeat: no-repeat;
+    top: 0%;
+    right: 0%;
+    cursor: pointer;
+    background-size: 53px;
+}
