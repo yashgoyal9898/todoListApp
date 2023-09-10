@@ -125,3 +125,48 @@ span {
     cursor: pointer;
     background-size: 53px;
 }
+
+@media (max-width:767px) {
+    .todo-heading h1 {
+        font-size: 35px;
+        margin: 30px 0px;
+    }
+    .heading-bottom {
+        flex-direction: column;
+        margin-bottom: -10px;
+    }
+    .underline {
+        display: none;
+    }
+    .todo-taskadd {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 0px;
+    }
+    button {
+        margin-left: 0px;
+        font-size: 20px;
+        padding: 5px 0px;
+        margin-bottom: 20px;
+    }
+    .todo-list-content {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .list-of-tasks li {
+        font-size: 17px;
+        padding: 0px 0px 0px 50px;
+    }
+    .list-of-tasks li span::after {
+        width: 35px;
+        height: 55px;
+        background-size: 35px;
+    }
+    .list-of-tasks li::before {
+        left: 19px;
+        top: 10px;
+        background-size: 18px;
+    }
+}
