@@ -1,6 +1,6 @@
 
 let task = document.getElementById('add-task');
-let listOfTasks = document.getElementById('ss');
+let listOfTasks = document.getElementById('add-task-list');
 let addTaskButton = document.querySelector('button');
 
 addTaskButton.addEventListener('click', () => {
