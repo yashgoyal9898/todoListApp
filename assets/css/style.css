@@ -165,7 +165,7 @@ span {
         height: 55px;
         background-size: 35px;
     }
-    .list-of-tasks li::before {
+    .list-of-tasks li::before, .list-of-tasks li.task-completed::before {
         left: 19px;
         top: 10px;
         background-size: 18px;
